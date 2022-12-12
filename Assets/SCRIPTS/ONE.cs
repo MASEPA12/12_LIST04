@@ -15,7 +15,7 @@ public class ONE : MonoBehaviour
             pointsSTORAGE(5);
         }
     }
-    // THe function rewrites the value of "total" in order to sum the points.
+    // The function rewrites the value of "total" in order to sum the points.
     private void pointsSTORAGE(int totalToAdd)
     {
         totalPOINTS = totalToAdd + totalPOINTS;
