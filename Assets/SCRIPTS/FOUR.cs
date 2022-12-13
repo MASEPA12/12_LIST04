@@ -9,15 +9,12 @@ public class FOUR : MonoBehaviour
 
     private void Start()
     {
-        //randomElement();
+        randomElement();
     }
-    //private int randomElement()
-    //{                          
-        /*ArrayIndex = Random.Range(0, Array.Length);
-        string nameOfArray;
-        //nameofarray es igual al Nº aleatri de s'array's name!!!!
-        nameOfArray = Array[ArrayIndex].name;
-        Debug.Log($"The aleatorian element is {ArrayIndex}");
-        return ArrayIndex ;*/
-    //}
+    private int randomElement()
+    {                          
+        ArrayIndex = Random.Range(0, Array.Length);
+        Debug.Log($"The aleatorian element is {Array[ArrayIndex]}");
+        return ArrayIndex ;
+    }
 }
