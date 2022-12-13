@@ -12,7 +12,7 @@ public class FOUR : MonoBehaviour
         randomElement();
     }
     private int randomElement()
-    {                          
+    {   //define the Array index as the range between 0 and it's lengh                       
         ArrayIndex = Random.Range(0, Array.Length);
         Debug.Log($"The aleatorian element is {Array[ArrayIndex]}");
         return ArrayIndex ;
