@@ -17,12 +17,6 @@ public class FIVE : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private bool isOutOfBounds(float x, float z)
     {
         if(transform.position.x > x || transform.position.x < -x)
