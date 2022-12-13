@@ -4,29 +4,35 @@ using UnityEngine;
 
 public class FIVE : MonoBehaviour
 {
-    //first we set the bounds; for example 2 and -2 is the bouds of x
-    public float X; //BOUND front/back
-    public float Z; //bound right/left
+    public float Xlimit;
+    private float Ylimit;
+    public float Zlimit;
 
-    // Start is called before the first frame update
     void Start()
     {
-        if (isOutOfBounds(X, Z))
+        if (isout(Xlimit, Ylimit, Zlimit) == true)
         {
-            Debug.Log($"The player is out of bounds");
+            Debug.Log("The player is out of bounds");
         }
     }
 
-    private bool isOutOfBounds(float x, float z)
+    private bool isout(float LimX, float LimY, float LimZ)
     {
-        if(transform.position.x > x || transform.position.x < -x)
+        if (transform.position.x > LimX || transform.position.x < -LimX)
         {
             return true;
         }
-        if(transform.position.z > z || transform.position.z < -z)
+        if (transform.position.z > LimZ || transform.position.z < -LimZ)
+        {
+            return true;
+        }
+        if (transform.position.y > LimY || transform.position.y < -LimY)
         {
             return true;
         }
         return false;
     }
 }
+
+
+
