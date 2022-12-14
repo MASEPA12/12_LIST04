@@ -158,7 +158,6 @@ MonoBehaviour:
   Array:
   - Marina
   - Jerson
-  - Mario
   - Miguel
   - Xisco
   - Ari
@@ -170,6 +169,7 @@ MonoBehaviour:
   - "Ra\xFAl"
   - Isa
   - Eli
+  - Mario
   - Jan
   - Xisca
   - Luis
@@ -684,8 +684,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b21d8b33408c7da41b5ed2fabd0f1243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  X: 2
-  Z: 2
+  Xlimit: 0
+  Zlimit: 0
 --- !u!65 &1286231042
 BoxCollider:
   m_ObjectHideFlags: 0
