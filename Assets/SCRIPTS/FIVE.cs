@@ -17,7 +17,8 @@ public class FIVE : MonoBehaviour
     }
 
     private bool isout(float LimX, float LimY, float LimZ)
-    {
+    {   //if the position on x,y or z is out of the limits, it will be true (will be out of bounds)
+
         if (transform.position.x > LimX || transform.position.x < -LimX)
         {
             return true;
@@ -30,6 +31,7 @@ public class FIVE : MonoBehaviour
         {
             return true;
         }
+        // if is in the bounds won't be out of bouds (false)
         return false;
     }
 }
